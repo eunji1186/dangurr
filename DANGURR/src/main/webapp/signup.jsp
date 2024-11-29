@@ -5,7 +5,7 @@
 	<head>
         <meta charset="utf-8">
         <title>🐶댕구르르🐶</title>
-        <link rel="stylesheet" href="css/iii.css"/>
+        <link rel="stylesheet" href="css/signup.css"/>
 
         <script type="text/javascript">
         	function checkFun(){
@@ -108,16 +108,16 @@
 	        	<fieldset style="text-align: center;" style="width:230px">
 	        		<legend> 강아지 등록 </legend>
 	        		<p>*표시는 필수 항목입니다. </p>
-	        		<p>*동물등록번호</p>
-	        		<input type="text" size="16" name="serial_number" id="serial_number">
+	        		<p>*</p><p>동물등록번호</p>
+	        		<input type="text" size="16" name="serial_number" id="serial_number" required>
 	        		<br>
 	        		
-	        		<p>*보호자 이름</p>
-	        		<input type="text" size="16" name="protector_name" id="protector_name">
+	        		<p>*</p><p>보호자 이름</p>
+	        		<input type="text" size="16" name="protector_name" id="protector_name" required>
 	        		<br>
 	        		
-	        		<p>*강아지 이름</p> 
-	        		<input type="text" size="16" name="dog_name" id="dog_name">
+	        		<p>*</p><p>강아지 이름</p> 
+	        		<input type="text" size="16" name="dog_name" id="dog_name" required>
 	        		<br>
 	        		
 	        		<p>종</p>
@@ -128,29 +128,27 @@
 	        		<input type="text" size="16" name="color" id="color">
 	        		<br>
 	        		
-	        		<p>*강아지 생일</p>
-	        		<input type="date" name="birth" id="birth">
+	        		<p>*</p><p>강아지 생일</p>
+	        		<input type="date" name="birth" id="birth" required>
 	        		<br>
 	        		 
-	        		<p>*성별</p>
-	        		<input type="radio" name="gender" id="gender_boy"> 남 
+	        		<p>*</p><p>성별</p>
+	        		<input type="radio" name="gender" id="gender_boy" required> 남 
 	        		<input type="radio" name="gender" id="gender_girl"> 여 
 	        		<br>
 					
-	        		<p>*중성화 여부</p>
-	        		<input type="radio" name="fixing" id="fixing" value="yes" onclick="showHideDiv()"/> 예  
-	        		<input type="radio" name="fixing" id="fixing" value="no" onclick="showHideDiv()"/> 아니오   
-	        		<br>
-	        		
-	        		
-	        		 
-	        		<p>*몸무게</p>
-	        		<input type="text" size="16" name="weight" id=weight> KG
+	        		<p>*</p><p>중성화 여부</p>
+	        		<input type="radio" name="fixing" id="fixing" value="yes" required/> 예  
+	        		<input type="radio" name="fixing" id="fixing" value="no"/> 아니오   
 	        		<br>
 	        		 
-	        		<p>*인식칩유무 </p>
+	        		<p>*</p><p>몸무게</p>
+	        		<input type="text" size="16" name="weight" id=weight required> KG
+	        		<br>
+	        		 
+	        		<p>*</p><p>인식칩유무 </p>
 	        		<label for="chip_yes">
-	        			<input type="radio" name="chip" id="chip_yes" onclick="showHideChip()"/> 예 
+	        			<input type="radio" name="chip" id="chip_yes" onclick="showHideChip()" required/> 예 
 	        		</label>
 	        		<label for="chip_no">
 	        			<input type="radio" name="chip" id="chip_no" onclick="showHideChip()"/> 아니오  
@@ -167,14 +165,14 @@
 					</script>
 	 				<br>
 	 			 
-	        		<p>*백신접종 여부</p>
-	        		<input type="radio" name="vaccin" id="vaccin_yes" > 예
+	        		<p>*</p><p>백신접종 여부</p>
+	        		<input type="radio" name="vaccin" id="vaccin_yes" required> 예
 	        		<input type="radio" name="vaccin" id="vaccin_no"> 아니오 
 	        		<input type="text" name="vaccin_text">
 	        		<br>
 	        		
-	        		<p>*알레르기 유무</p> 
-	        		<input type="radio" name="allergic" id="allergic_yes"> 예
+	        		<p>*</p><p>알레르기 유무</p> 
+	        		<input type="radio" name="allergic" id="allergic_yes" required> 예
 	        		<input type="radio" name="allergic" id="allergic_no"> 아니오 
 	        		<input type="text" name="allergic_text">
 	        		<br>
@@ -183,12 +181,12 @@
 	        		<textarea name="etc" cols="100" rows="10" placeholder="기타 특이사항을 입력해주세요. " id="etc"></textarea>
 	        		<br>
 	        		
-	        		<p>*보호자 번지 </p>
-	        		<input type="text" size="16" name="phone" id="phone"> 
+	        		<p>*</p><p>보호자 번호 </p>
+	        		<input type="text" size="16" name="phone" id="phone" required> 
 	        		<br>
 	        		
-	        		<p>*보호자 주소 </p>
-	        		<input type="text" size="16" name="address" id="address">
+	        		<p>*</p><p>보호자 주소 </p>
+	        		<input type="text" size="16" name="address" id="address" required>
 	        		<br>
 	        		
 	        	</fieldset>
@@ -199,10 +197,6 @@
 	        </form>
         </div>
         
-        <footer>
-            <a href="https://www.instagram.com/dang_gurrr?igsh=MTl1a2d2YXBpYWNhYQ==">
-                <img src="images/instagram.webp" width="20" height="20" >
-            </a>
-        </footer>
+       <%@ include file="footer.jsp" %>
     </body>
 </html>

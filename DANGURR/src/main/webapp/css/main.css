@@ -1,24 +1,90 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
-
 *{
     margin:0;
     padding: 0;
     border: none;
 }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{
-    margin:0;
-    padding: 0;
-}
-
-footer{
-    margin: 0;
-    padding: 0;
+body{
+    font-size: 14px;
     font-family: 'Roboto', sans-serif;
-    position: absolute;
-    bottom: 0px;
-    left: 5px;
 }
 
+.today{
+    width: 400px;
+    height: 350px;
+    padding: 40px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 10%;
+}
+
+.today > h4{
+    font-size: 24px;
+    color: #b6e3e9;
+}
+
+.payday{
+	width: 400px;
+    height: 350px;
+    padding: 40px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 10%;
+}
+
+.payday > h4{
+	font-size: 24px;
+	color: #b6e3e9;
+}
+
+.dogList{
+	font-size: 24px;
+	left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dogList > h1{
+	font-size: 34px;
+	color: #b6e3e9;
+	margin-bottom: 20px;
+	left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dogList > table{
+	border-collapse: collapse;
+	width: 100%;
+	float: left;
+	margin: 0 0 2em;
+	
+	thead{
+		border-bottom: 3px solid #ffffe0;
+	
+		th{
+			padding: 0.35em 0 .35em;
+			font-weight: 400;
+			text-align: left;
+			font-size: 1.25em;
+		}
+	}
+	
+	tbody{
+		border-bottom: 3px solid #ffffe0;
+		
+		tr{
+			border-bottom: 2px solide #ddd;
+			
+			td{
+				padding: .75em 0;
+			}
+		}
+	}
+	
+	left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

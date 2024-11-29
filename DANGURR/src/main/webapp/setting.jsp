@@ -1,3 +1,5 @@
+<!-- 설정  -->
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -19,29 +21,23 @@
                 <ul class="gnb">
                 	<li>
                     	<ul class="inner">
-                        	<li><a href="spending.html">지출</a></li>
-                            <li><a href="profit.html">수익</a></li>
-                            <li><a href="dogs.html">멈머</a></li>
-                            <li><a href="setting.html">설정</a></li>
+                        	<li><a href="spending.html"> 지출 </a></li>
+                            <li><a href="profit.html"> 수익 </a></li>
+                            <li><a href="dogs.html"> 원생 </a></li>
+                            <li><a href="setting.html"> 설정 </a></li>
                         </ul>
                      </li>
                  </ul>
             </div>
         </header>
+        <br><br>
+        <div class="settingHeader" style="text-align: center;">
+		    <ul>
+		        <li><a href="singup.jsp"> 회원등록 </a></li>
+	        	<li><a href="update_dogs.jsp"> 정보수정 </a></li>
+	        </ul>		
+        </div>
         
-        <header>
-        	<div class="settingHeader" style="text-align: center;">
-        		<a href="protector_singup.jsp"> 회원등록 </a>
-        		<a href="dog_singup.jsp"> 강아지등록 </a>
-        		
-        	</div>
-        </header>
-
-
-        <footer>
-            <a href="https://www.instagram.com/dang_gurrr?igsh=MTl1a2d2YXBpYWNhYQ==">
-                <img src="images/instagram.webp" width="20" height="20" >
-            </a>
-        </footer>
+        <%@ include file="footer.jsp" %>
     </body>
 </html>

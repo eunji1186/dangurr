@@ -1,3 +1,5 @@
+<!-- 지출 내역  -->
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -5,7 +7,7 @@
 	<head>
         <meta charset="utf-8">
         <title>🐶댕구르르🐶</title>
-        <link rel="stylesheet" href="css/main.css"/>
+        <link rel="stylesheet" href="css/profit.css"/>
     </head>
  <body>
         <header>
@@ -19,22 +21,36 @@
                 <ul class="gnb">
                 	<li>
                     	<ul class="inner">
-                        	<li><a href="spending.html">지출</a></li>
-                            <li><a href="profit.html">수익</a></li>
-                            <li><a href="dogs.html">멈머</a></li>
-                            <li><a href="setting.html">설정</a></li>
+                        	<li><a href="spending.html"> 지출 </a></li>
+                            <li><a href="profit.html"> 수익 </a></li>
+                            <li><a href="dogs.html"> 원생 </a></li>
+                            <li><a href="setting.html"> 설정 </a></li>
                         </ul>
                      </li>
                  </ul>
             </div>
         </header>
-
         
+        <h1> 지출 목록 </h1>
+		
+		<table>
+			<thead>
+				<tr>
+					<th> 날짜 </th>
+					<th> 항목 </th>
+					<th> 금액 </th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<th scope="row"> 2024-11-28 </th>
+					<td> 은지용돈 </td>
+					<td> 500,000 </td>
+				</tr>
+			</tbody>
+		</table>
 
-        <footer>
-            <a href="https://www.instagram.com/dang_gurrr?igsh=MTl1a2d2YXBpYWNhYQ==">
-                <img src="images/instagram.webp" width="20" height="20" >
-            </a>
-        </footer>
+        <%@ include file="footer.jsp" %>
     </body>
 </html>
