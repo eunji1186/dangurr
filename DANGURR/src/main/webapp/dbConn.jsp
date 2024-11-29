@@ -9,9 +9,9 @@
 <%
 	Connection conn = null;
 
-	String url = "jdbc:mysql: //localhost:3306/dangurr";
-	String user = "root";
-	String passwd = "root1357";
+	String url = "jdbc:mysql:";
+	String user = "";
+	String passwd = "";
 	
 	Class.forName("com.mysql.jdbc.Driver");
 	
